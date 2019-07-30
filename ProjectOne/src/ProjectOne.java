@@ -18,6 +18,8 @@ public class ProjectOne {
 		stars();
 		timeAndMoney(input);
 		stars();
+		hours(input);
+		stars();
 		ending();
 		
 	}
@@ -81,6 +83,27 @@ public class ProjectOne {
 		
 		
 		
+	}
+	public static void hours(Scanner input) {
+		/**
+		 * Calculating the difference time between your home and the 
+		 * destination area.
+		 * @param input - Scanner to take the user's input.
+		 * @return void - This method doesn't return anything.
+		 */
+		System.out.print("What's the time difference, in hours, between your home and your destination?  ");
+		int time = input.nextInt();
+		space();
+		int timeAtNoon =time;
+		if(time<0) {
+			time = 24 + time ;
+		
+		}
+		System.out.println("That means when it is midnight at home it will be "+time+":00 in your travel destination.");
+		space();
+		
+		System.out.println("and when it is noon at home it will be "+(timeAtNoon+12)+":00");
+		space();
 	}
 	public static void ending() {
 		/**
