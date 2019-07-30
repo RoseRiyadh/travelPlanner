@@ -98,6 +98,9 @@ public class ProjectOne {
 		if(time<0) {
 			time = 24 + time ;
 		
+		} else if (time>=24) {
+			time = time % 24;
+			timeAtNoon = time;
 		}
 		System.out.println("That means when it is midnight at home it will be "+time+":00 in your travel destination.");
 		space();
